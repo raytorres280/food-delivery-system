@@ -1,0 +1,7 @@
+# c# executable
+*.dll
+
+# .net project files
+obj/
+
+.DS_Store

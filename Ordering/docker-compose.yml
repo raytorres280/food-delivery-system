@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  ordering:
+    image: ordering
+    ports:
+    - "5000:1993"
+    build:
+      context: .
+      dockerfile: Ordering/Dockerfile

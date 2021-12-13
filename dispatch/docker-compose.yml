@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  ordering:
+    image: dispatch_api
+    ports:
+    - "5001:80"
+    build:
+      context: .
+      dockerfile: Dockerfile

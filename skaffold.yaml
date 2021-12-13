@@ -1,0 +1,25 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: olo-sample
+build:
+  artifacts:
+  - image: dispatch_api
+    context: dispatch
+    docker:
+      dockerfile: Dockerfile
+  - image: ordering
+    context: Ordering
+    docker:
+      dockerfile: Ordering/Dockerfile
+    # buildpacks:
+    #   builder: gcr.io/buildpacks/builder:v1
+deploy:
+  kubectl:
+    manifests:
+    - Ordering/ordering-deployment.yaml
+    - Ordering/ordering-service.yaml
+    - dispatch/dispatch-deployment.yml
+    - dispatch/dispatch-service.yml
+    # - messaging/cluster-operator.yml
+    # - messaging/rabbitmq.yaml

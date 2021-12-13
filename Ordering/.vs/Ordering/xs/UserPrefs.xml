@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{3926E72B-84FA-45FE-8F2B-FF4BD02E00EE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ordering/Controllers/OrderController.cs">
+    <Files>
+      <File FileName="Ordering/Controllers/OrderController.cs" Line="30" Column="1" />
+      <File FileName="Ordering/Services/RabbitMQ.cs" />
+      <File FileName="ordering-service.yaml" />
+      <File FileName="ordering-deployment.yaml" />
+      <File FileName="docker-compose.yml" />
+      <File FileName="Ordering/appsettings.json" />
+      <File FileName="Ordering/appsettings.Development.json" />
+      <File FileName="Ordering/Startup.cs" />
+      <File FileName="Ordering/Program.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ordering" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="Ordering" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="OrderController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/raymondtorres/Developer/olo-sample/Ordering/Ordering/Services/RabbitMQ.cs" relfile="Ordering/Services/RabbitMQ.cs" line="24" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Ordering PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

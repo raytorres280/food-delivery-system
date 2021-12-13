@@ -1,0 +1,31 @@
+GET http://localhost:60479/getStatus/2980 HTTP/1.1
+content-type: application/json
+
+###
+
+POST http://localhost:8000/dispatchOrder HTTP/1.1
+content-type: application/json
+
+{
+	"customerId": 1,
+	"addressId": 1,
+	"orderId": 1
+}
+
+
+### 
+GET http://localhost:8000/getStatus/704 HTTP/1.1
+content-type: application/json
+
+
+### 
+GET http://localhost:59237/order/getorder/704 HTTP/1.1
+content-type: application/json
+
+### 
+POST http://localhost:61335/order/createOrder HTTP/1.1
+content-type: application/json
+
+{
+	"id": 18
+}

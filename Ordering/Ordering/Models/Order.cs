@@ -13,6 +13,8 @@ namespace Orders.Models
         public int AddressId { get; set; }
         [JsonRequired]
         public int RestaurantId { get; set; }
+        [JsonRequired]
+        public bool IsDelivery { get; set; }
         public Order()
         {
         }

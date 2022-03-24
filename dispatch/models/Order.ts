@@ -4,4 +4,5 @@ class Order {
 	customerId!: number;
 	addressId!: number;
 	restaurantId?: number;
+	isDelivery!: boolean;
 }

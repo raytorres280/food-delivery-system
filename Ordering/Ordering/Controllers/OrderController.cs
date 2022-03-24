@@ -37,7 +37,6 @@ namespace Orders.Controllers
             }
             //var order = new Order();
             var client = new RabbitMqService("default_user_E13xOz5sn-xRHn0agSj", "2X-ooc7LbSp0F6NrwkF8r0RxogG9VfYG", 5672, "10.102.12.80");
-            System.Console.WriteLine("successfully connected to rabbitmq");
             var msg = $"hello from order number {order.Id}";
             client.PublishMessage(msg);
             return order;

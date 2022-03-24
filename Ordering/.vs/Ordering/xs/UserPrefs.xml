@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{3926E72B-84FA-45FE-8F2B-FF4BD02E00EE}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Ordering/Controllers/OrderController.cs">
     <Files>
-      <File FileName="Ordering/Controllers/OrderController.cs" Line="30" Column="1" />
+      <File FileName="Ordering/Controllers/OrderController.cs" Line="27" Column="14" />
       <File FileName="Ordering/Services/RabbitMQ.cs" />
       <File FileName="ordering-service.yaml" />
       <File FileName="ordering-deployment.yaml" />

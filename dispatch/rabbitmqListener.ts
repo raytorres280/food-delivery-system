@@ -1,6 +1,7 @@
-import { AmqpConnectOptions, connect } from "./deps.ts";
-
+import { AmqpConnectOptions, connect, AmqpConnection } from "./deps.ts";
+export let connection: AmqpConnection;
 export const configureRabbitListener = async () => {
+	
 	try {
 	  const opts: AmqpConnectOptions = {
 		hostname: "10.102.12.80",
@@ -12,7 +13,7 @@ export const configureRabbitListener = async () => {
 		// frameMax: 0,
 		loglevel: "debug",
 	  };
-	  const connection = await connect(opts);
+	  connection = await connect(opts);
 	  const channel = await connection.openChannel();
 	  const queueName = "my.queue";
 	  console.log(channel)
@@ -32,7 +33,9 @@ export const configureRabbitListener = async () => {
 	  //   new TextEncoder().encode(JSON.stringify({ foo: "bar" })),
 	  // );
 	  // await connection.close();
+
 	} catch (error) {
 	  console.log(error);
 	}
+	
   }
